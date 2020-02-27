@@ -3,6 +3,7 @@ public class Test {
         PaintingBuilder builder = new PaintingBuilder();
 
         builder.buildPainting();
-
+        builder.buildPainting();
+        builder.buildPainting();
     }
 }

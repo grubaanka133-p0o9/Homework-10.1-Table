@@ -6,7 +6,7 @@ public class PaintingBuilder {
     private int index = 0;
 
     public void buildPainting(){
-        if (index == paintings.length){
+        if (index >= paintings.length){
             System.out.println("There is too much paintings.");
             for (int i = 0; i < paintings.length; i++){
                 System.out.println(paintings[i].toString());
@@ -15,6 +15,13 @@ public class PaintingBuilder {
         }else {
             paintings[index] = uniqueBuilder();
             index++;
+            if(index==paintings.length){
+                System.out.println("Your paintings: ");
+                for (int i = 0; i < paintings.length; i++){
+                    System.out.println(paintings[i].toString());
+                }
+
+            }
         }
     }
 
